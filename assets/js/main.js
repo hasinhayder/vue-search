@@ -9,7 +9,8 @@ const app = Vue.createApp({
     },
     computed:{
         filteredCountries(){
-            return this.countries.filter((country)=>country.country.toLowerCase().startsWith(this.item))
+            return this.countries
+            .filter((country)=>country.country.toLowerCase().startsWith(this.item.toLowerCase()))
         }
     }
 });
