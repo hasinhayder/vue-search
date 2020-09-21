@@ -16,18 +16,16 @@
       <div id="app">
         <div class="form">
           <label>Type a country name</label>
-          <input type="text" /><br />
+          <input type="text" v-model="item" /><br />
         </div>
         <ul class="items">
-          <li>
-            Example Data One
-          </li>
-          <li>
-            Example Data Two
+          <li v-for="country in filteredCountries">
+            {{country.country}}
           </li>
         </ul>
       </div>
     </section>
     <script src="//unpkg.com/vue@next"></script>
+    <script src="assets/js/main.js?v3"></script>
   </body>
 </html>
