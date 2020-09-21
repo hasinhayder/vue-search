@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Search</title>
+    <title>Vue Quick Search</title>
     <link rel="stylesheet" href="assets/css/style.css?v3" />
     <link
       href="//fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <section id="loader" class="loader">loading . . .</section>
     <section class="content">
       <div id="app">
         <div class="form">
@@ -19,9 +20,7 @@
           <input type="text" v-model="item" /><br />
         </div>
         <ul class="items">
-          <li v-for="country in filteredCountries">
-            {{country.country}}
-          </li>
+          <li v-for="country in filteredCountries">{{country.country}}</li>
         </ul>
       </div>
     </section>
