@@ -6,7 +6,6 @@ const app = Vue.createApp({
       .then(response => response.json())
       .then(data => {
         this.countries = data
-        document.getElementById("loader").style.display="none";
       })
   },
   data () {

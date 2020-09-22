@@ -59,16 +59,3 @@ ul.items li {
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
 }
-
-.loader{
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100vw;
-    height: 100vh;
-    z-index: 1000;
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    background-color: #fff;
-}
